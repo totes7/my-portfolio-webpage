@@ -9,6 +9,8 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: black;
+  color: silver;
 }
 
 h1,
@@ -70,7 +72,7 @@ a:hover {
 
 .hero-banner {
   display: grid;
-  grid-template-rows: 250px;
+  grid-template-rows: 300px;
   grid-template-columns: 1fr 3fr;
   grid-template-areas: "image subtitle";
 }
@@ -81,8 +83,8 @@ a:hover {
   display: flex;
   align-items: end;
   justify-content: start;
-  padding: 20px 30px;
-  font-size: 24px;
+  padding: 20px 45px;
+  font-size: 35px;
 }
 
 #image {
@@ -91,4 +93,37 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Main Section */
+
+.page-wrapper {
+  display: grid;
+  grid-template-rows: 400px 400px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 
+  "about work work"
+  "contact work work";
+}
+
+#about {
+  grid-area: about;
+  background-color: orangered
+}
+
+#work {
+  grid-area: work;
+  background-color: orangered
+}
+
+#contact {
+  grid-area: contact;
+  background-color: orangered
+}
+
+.page-section {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 25px;
 }
