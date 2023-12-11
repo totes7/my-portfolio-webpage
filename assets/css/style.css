@@ -145,6 +145,9 @@ a:hover {
   background-color: black;
   margin: 10px;
   border-radius: 15px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 
 #work-card-one {
@@ -165,4 +168,12 @@ a:hover {
 
 #work-card-five {
   grid-area: five;
+}
+
+.card-title {
+  background-color: var(--bg-color-main);
+  height: 20%;
+  width: 100%;
+  margin: 2%;
+  border-radius: 15px;
 }
