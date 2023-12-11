@@ -1,7 +1,9 @@
 /* General */
 
 :root {
-  --bg-color-main: rgb(158, 226, 126);
+  --bg-color-main: #bf5700;
+  --bg-color-second: black;
+  --bg-color-third: whitesmoke;
 }
 
 * {
@@ -13,8 +15,8 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: black;
-  color: #2b2a2a;
+  background-color: var(--bg-color-second);
+  color: var(--bg-color-third);
 }
 
 h1,
@@ -33,7 +35,7 @@ p {
 /* Navbar & Logo */
 
 header {
-  background-color: black;
+  background-color: var(--bg-color-second);
   display: grid;
   grid-template-rows: 75px;
   grid-template-columns: 1fr 1fr;
@@ -49,6 +51,10 @@ header {
   color: var(--bg-color-main);
 }
 
+#logo span {
+  color: var(--bg-color-third);
+}
+
 #navbar {
   grid-area: navbar;
   display: flex;
@@ -59,17 +65,18 @@ header {
 
 li {
   display: inline;
-  padding-right: 30px;
+  padding: 0 30px;
   font-size: 20px;
 }
 
 a {
-  color: var(--bg-color-main);
+  color: var(--bg-color-third);
   text-decoration: none;
 }
 
 a:hover {
-  color: white;
+  color: var(--bg-color-main);
+  font-size: 22px;
 }
 
 /* Hero Banner */
@@ -150,6 +157,10 @@ a:hover {
   justify-content: center;
 }
 
+.work-card:hover {
+  margin: 5px;
+}
+
 #work-card-one {
   grid-area: one;
 }
@@ -171,7 +182,7 @@ a:hover {
 }
 
 .card-title {
-  background-color: var(--bg-color-main);
+  background-color: var(--bg-color-third);
   height: 20%;
   width: 100%;
   margin: 2%;
