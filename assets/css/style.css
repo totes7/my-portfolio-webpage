@@ -1,5 +1,9 @@
 /* General */
 
+:root {
+  --bg-color-main: rgb(158, 226, 126);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,7 +14,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color: black;
-  color: silver;
+  color: #2b2a2a;
 }
 
 h1,
@@ -42,7 +46,7 @@ header {
   align-items: center;
   padding: 20px;
   font-size: 60px;
-  color: orangered;
+  color: var(--bg-color-main);
 }
 
 #navbar {
@@ -60,12 +64,12 @@ li {
 }
 
 a {
-  color: orangered;
+  color: var(--bg-color-main);
   text-decoration: none;
 }
 
 a:hover {
-  color: silver;
+  color: white;
 }
 
 /* Hero Banner */
@@ -79,7 +83,7 @@ a:hover {
 
 #subtitle {
   grid-area: subtitle;
-  background-color: orangered;
+  background-color: var(--bg-color-main);
   display: flex;
   align-items: end;
   justify-content: start;
@@ -106,24 +110,59 @@ a:hover {
   "contact work work";
 }
 
-#about {
-  grid-area: about;
-  background-color: orangered
+.page-section {
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 15px;
 }
 
-#work {
-  grid-area: work;
-  background-color: orangered
+#about {
+  grid-area: about;
+  background-color: var(--bg-color-main);
 }
 
 #contact {
   grid-area: contact;
-  background-color: orangered
+  background-color: var(--bg-color-main);
 }
 
-.page-section {
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 25px;
+#work {
+  grid-area: work;
+  background-color: var(--bg-color-main);
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "one one"
+  "two three"
+  "four five";
+}
+
+/* Work Section */
+
+.work-card {
+  background-color: black;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+#work-card-one {
+  grid-area: one;
+}
+
+#work-card-two {
+  grid-area: two;
+}
+
+#work-card-three {
+  grid-area: three;
+}
+
+#work-card-four {
+  grid-area: four;
+}
+
+#work-card-five {
+  grid-area: five;
 }
