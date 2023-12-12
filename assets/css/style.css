@@ -76,7 +76,6 @@ a {
 
 a:hover {
   color: var(--bg-color-main);
-  font-size: 22px;
 }
 
 /* Hero Banner */
@@ -149,7 +148,7 @@ a:hover {
 /* Work Section */
 
 .work-card {
-  background-color: black;
+  background-color: var(--bg-color-third);
   margin: 10px;
   border-radius: 15px;
   display: flex;
@@ -163,28 +162,68 @@ a:hover {
 
 #work-card-one {
   grid-area: one;
+  background-image: url(../images/card-img-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #work-card-two {
   grid-area: two;
+  background-image: url(../images/card-img-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #work-card-three {
   grid-area: three;
+  background-image: url(../images/card-img-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #work-card-four {
   grid-area: four;
+  background-image: url(../images/card-img-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #work-card-five {
   grid-area: five;
+  background-image: url(../images/card-img-5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .card-title {
-  background-color: var(--bg-color-third);
-  height: 20%;
+  background-color: var(--bg-color-second);
+  height: 25%;
   width: 100%;
   margin: 2%;
   border-radius: 15px;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.card-title a {
+  color: var(--bg-color-third);
+}
+
+#big-card {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--bg-color-main);
+  height: 60px;
+  margin-top: 20px;
 }
