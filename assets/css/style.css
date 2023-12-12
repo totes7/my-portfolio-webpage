@@ -69,12 +69,12 @@ li {
   font-size: 20px;
 }
 
-a {
+#navbar a {
   color: var(--bg-color-third);
   text-decoration: none;
 }
 
-a:hover {
+#navbar a:hover {
   color: var(--bg-color-main);
 }
 
@@ -137,15 +137,21 @@ a:hover {
   grid-area: work;
   background-color: var(--bg-color-main);
   display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
+  "portfolio portfolio"
   "one one"
   "two three"
   "four five";
 }
 
 /* Work Section */
+
+#portfolio {
+  grid-area: portfolio;
+  font-size: 24px;
+}
 
 .work-card {
   background-color: var(--bg-color-third);
@@ -213,11 +219,30 @@ a:hover {
 
 .card-title a {
   color: var(--bg-color-third);
+  text-decoration: none;
 }
 
 #big-card {
   padding-top: 20px;
   font-size: 30px;
+}
+
+/* Contact section */
+
+#contact h5, #contact p {
+  text-align: center;
+  padding: 5px 0;
+}
+
+#contact i {
+  padding: 5px 40%;
+  font-size: 50px;
+  color: var(--bg-color-third);
+}
+
+
+#contact i:hover {
+  color: var(--bg-color-second);
 }
 
 /* Footer */
@@ -226,4 +251,6 @@ footer {
   background-color: var(--bg-color-main);
   height: 60px;
   margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
 }
