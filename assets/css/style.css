@@ -214,7 +214,7 @@ li {
   border-radius: 15px;
   text-align: center;
   padding-top: 5px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .card-title a {
@@ -253,4 +253,103 @@ footer {
   margin-top: 20px;
   padding-top: 20px;
   text-align: center;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1072px) {
+
+  #navbar {
+    display: none;
+  }
+
+  .page-wrapper {
+    display: grid;
+    grid-template-rows: 200px 800px 150px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "about"
+    "work"
+    "contact";
+  }
+
+  .page-section {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  #contact h5 {
+    display: none;
+  }
+
+  #contact i {
+    font-size: 30px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 5px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  header {
+    display: grid;
+    grid-template-rows: 75px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "navabr logo navbar";
+  }
+
+  .hero-banner {
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "subtitle";
+  }
+
+  #image {
+    display: none;
+  }
+
+  footer {
+    height: 75px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  #subtitle {
+    font-size: 24px;
+  }
+
+  .page-wrapper {
+    grid-template-rows: 300px 1000px 250px;
+  }
+
+  #work {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "portfolio"
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5px;
+  }
+
 }
